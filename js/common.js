@@ -1,12 +1,15 @@
 $(document).ready(function () {
 	
 	$('.menu-btn').on('click',function () {
+		$('body').addClass('noscroll');
 		$('.nav').addClass('active');
+
 	});
 
 	$('.close').on('click',function (e) {
 		e.preventDefault();
 
+		$('body').куьщмуClass('noscroll');
 		$('.nav').removeClass('active');
 	});
 
