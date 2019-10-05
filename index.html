@@ -1,26 +1,481 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+	<title>MMA</title>
 </head>
 <body>
-	<div class="wrapper">
-		<header class="header">
-			
+	<div class="wrapper"> 
+		<header class="header flex flex--center flex--between">
+			<div class="header__left flex flex--center">
+				<div class="logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<nav class="nav">
+					<a href="#" class="close">
+						Закрыть
+					</a>
+					<ul class="menu flex">
+						<li><a href="#">Миссия клуба </a></li>
+						<li><a href="#">Стоимость</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="header__right flex flex--center">
+
+				<div class="header-item-container flex flex--center">
+					<div class="header__item">
+						Работаем с 10:00 — 22:00
+					</div>
+					<div class="header__item">
+						<a href="tel:+78974568790">+7 (897) 456-87-90</a>
+					</div>
+				</div>
+				<ul class="social flex">
+					<li>
+						<a href="#">
+							<span class="ico">
+								<svg>
+									<use xlink:href="#svg-inst"></use>
+								</svg>
+							</span>	
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico">
+								<svg>
+									<use xlink:href="#svg-vk"></use>
+								</svg>
+							</span>	
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="menu-btn">
+				<span class="menu-btn__text">
+					Меню
+				</span>
+				<div class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
 		</header>
 		<main class="main">
+
+			<div class="top-screen">
+				<div class="container flex">
+					<div class="top-screen__descr">
+						<h1>Твой Ринг</h1>
+						<h2>
+							Это MMA для каждого не зависимо от возраста<br> и уровня подготовки
+						</h2>
+						<a href="#" class="btn btn--yellow js-popup"><span>записаться на бесплатное занятие</span></a>
+
+						<ul class="top-screen__list flex">
+							<li>
+								<div class="top-screen__list__title">ЭТО БЕЗОПАСНО</div>
+								<div class="top-screen__list__descr">
+									Предоставляем <br>
+									экипировку
+								</div>
+								<img src="img/icons/num-01.png" alt="" class="num">
+							</li>
+							<li>
+								<div class="top-screen__list__title">ЭТО ДОСТУПНО</div>
+								<div class="top-screen__list__descr">
+									Индивидуальное занятие от 750 <br>
+									 рублей
+								</div>
+								<img src="img/icons/num-02.png" alt="" class="num">
+							</li>
+							<li>
+								<div class="top-screen__list__title">ЭТО ЭФФЕКТИВНО</div>
+								<div class="top-screen__list__descr">
+									Персональный тренер – гарантия <br>
+									результата
+								</div>
+								<img src="img/icons/num-03.png" alt="" class="num">
+							</li>
+						</ul>
+
+						<ul class="type-list flex">
+							<li><a href="#" class="btn btn--border btn--lt"><span>ДЕВУШКАМ</span></a></li>
+							<li><a href="#" class="btn btn--border btn--lt"><span>МУЖЧИНАМ</span></a></li>
+							<li><a href="#" class="btn btn--border btn--lt"><span>ДЕТЯМ</span></a></li>
+						</ul>
+					</div>
+					<div class="top-screen__img">
+						<img src="img/photos/helm.png" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="main-slider-section">
+				<div class="main-slider__dots"></div>
+				<div class="main-slider">
+					<div class="main-slider__item">
+						<img src="img/slides/slide-1.jpg" alt="" class="main-slide__img">
+						<div class="main-slider__content">
+							<h2 class="slide__item__title">
+								ТВОЙ РИНГ ДЕВУШКАМ
+							</h2>
+							<h3 class="slide__item__subtitle">
+								Стоимость индивидуального занятия <b>всего <span class="yellow">750</span> рублей</b>
+							</h3>
+							<h4 class="slide-features-title">
+								Занятия ММА для девушек:
+							</h4>
+
+							<ul class="slide__features">
+								<li>
+									<span class="ico">
+										<img src="img/icons/num-01_yellow.png" alt="">
+									</span>
+									<span class="text">
+										Это революция в формате фитнеса. Интенсивная кардио и силовая тренировка 
+										с учетом возраста, веса и уровня подготовки
+									</span>
+								</li>
+								<li>
+									<span class="ico">
+										<img src="img/icons/num-02_yellow.png" alt="">
+									</span>
+									<span class="text">
+										Навыки самообороны и вера в себя
+									</span>
+								</li>
+								<li>
+									<span class="ico">
+										<img src="img/icons/num-03_yellow.png" alt="">
+									</span>
+									<span class="text">
+										Это гибкость, скорость и стройное тело
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="main-slider__item">
+						<img src="img/slides/slide-2.jpg" alt="" class="main-slide__img">
+						<div class="main-slider__content">
+							<h2 class="slide__item__title">
+								ТВОЙ РИНГ МУЖЧИНАМ
+							</h2>
+							<h3 class="slide__item__subtitle">
+								Стоимость индивидуального занятия <b>всего <span class="yellow">750</span> рублей</b>
+							</h3>
+							<h4 class="slide-features-title">
+								Занятия MMA для мужчин:
+							</h4>
+
+							<ul class="slide__features">
+								<li>
+									<span class="ico">
+										<img src="img/icons/num-01_yellow.png" alt="">
+									</span>
+									<span class="text">
+										Интенсивная кардио и силовая тренировка с учетом возраста, веса и уровня подготовки
+									</span>
+								</li>
+								<li>
+									<span class="ico">
+										<img src="img/icons/num-02_yellow.png" alt="">
+									</span>
+									<span class="text">
+										Единоборства это увлекательно. Новичок ты или опытный спортсмен, с каждой тренировкой будешь чувствовать прогресс
+									</span>
+								</li>
+								<li>
+									<span class="ico">
+										<img src="img/icons/num-03_yellow.png" alt="">
+									</span>
+									<span class="text">
+										Когда ты заходишь в ринг – все проблемы остаются за канатами
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="main-slider__item">
+						<img src="img/slides/slide-3.jpg" alt="" class="main-slide__img">
+						<div class="main-slider__content">
+							<h2 class="slide__item__title">
+								ТВОЙ РИНГ ДЕТЯМ
+							</h2>
+							<h3 class="slide__item__subtitle">
+								Стоимость индивидуального занятия<br> <b>всего <span class="yellow">750</span> рублей</b>
+							</h3>
+							<h4 class="slide-features-title">
+								Занятия ММА для детей:
+							</h4>
+
+							<ul class="slide__features">
+								<li>
+									<span class="ico">
+										<img src="img/icons/num-01_yellow.png" alt="">
+									</span>
+									<span class="text">
+										Увлекательные тренировки с учетом возраста, веса и уровня подготовки
+									</span>
+								</li>
+								<li>
+									<span class="ico">
+										<img src="img/icons/num-02_yellow.png" alt="">
+									</span>
+									<span class="text">
+										Навыки самообороны и вера в себя
+									</span>
+								</li>
+								<li>
+									<span class="ico">
+										<img src="img/icons/num-03_yellow.png" alt="">
+									</span>
+									<span class="text">
+										Индивидуальное занятие – это безопасно
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				
+				<div class="main-slider__bottom">
+					<a href="#" class="btn btn--yellow js-popup">
+						<span>
+							записаться на бесплатное занятие
+						</span>
+					</a>
+					<div class="main-slider__arrows"></div>
+				</div>
+				
+			</div>
+
+			<div class="about">
+				<div class="title-container">
+					<h2>о нас</h2>
+				</div>
+				<div class="about-list-container">
+					<ul class="about-list flex flex--wrap">
+						<li>
+							<div class="about-list__item">
+								<div class="ico">
+									<img src="img/icons/about-01.png" alt="">
+								</div>
+								<div class="text">
+									Мы делаем занятия единоборствами доступными каждому, не зависимо от уровня подготовки.
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="about-list__item">
+								<div class="ico">
+									<img src="img/icons/about-02.png" alt="">
+								</div>
+								<div class="text">
+									Мы получаем удовольствие, когда наши клиенты узнают что-то новое, открывают в себе что-то новое.
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="about-list__item">
+								<div class="ico">
+									<img src="img/icons/about-03.png" alt="">
+								</div>
+								<div class="text">
+									Мы уважаем каждого кто пришел, потому что он решился менять себя в лучшую сторону.
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="about-list__item">
+								<div class="ico">
+									<img src="img/icons/about-04.png" alt="">
+								</div>
+								<div class="text">
+									Единоборства - это сила и красота, мы помогаем людям стать увереннее в себе, поверить в себя, научиться преодолевать и получать удовольствие от эстетики поединка и его красоты.
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="about-list__item">
+								<div class="ico">
+									<img src="img/icons/about-05.png" alt="">
+								</div>
+								<div class="text">
+									Занятия единоборствами доступны всем, не зависимо от уровня подготовки. Мы подберем программу и нагрузку оптимально для любого клиента.
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="btn btn--yellow js-popup">
+								<span>записаться на бесплатное занятие</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<img src="img/photos/medal.png" alt="" class="medal">
+				<img src="img/photos/gloves.png" alt="" class="gloves">
+				<img src="img/photos/fist_bottom.png" alt="" class="fist">
+			</div>
+
+			<div class="price">
+				<div class="container">
+					<div class="price__title">
+						<span>Стоимость</span>
+						<h2>тренировок</h2>
+					</div>
+					<div class="price__notice">
+						Занимайтесь столько раз в неделю или месяц сколько Вам удобно! <br>
+						Занятия не сгорают со временем!
+					</div>
+
+					<div class="price-row flex flex--between">
+						<div class="price__item">
+							<div class="price__item__top">Абонемент на 8 занятий всего</div>
+							<div class="price__item__total">
+								<b>за <span class="yellow">6000</span> рублей</b>
+							</div>
+							<div class="price__item__notice">
+								Занятия проводятся как индивидуально, так и со спарринг партнером.
+							</div>
+							<div class="btn-container">
+								<a href="#" class="btn btn--yellow js-popup">
+									<span>
+										записаться
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="price__item">
+							<div class="price__item__top">Абонемент на 8 занятий всего</div>
+							<div class="price__item__total">
+								<b>за <span class="yellow">8000</span> рублей</b>
+							</div>
+							<div class="price__item__notice">
+								Занятия проводятся только индивидуально.
+							</div>
+							<div class="btn-container">
+								<a href="#" class="btn btn--yellow js-popup">
+									<span>
+										записаться
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="contact">
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2276.44228006631!2d37.56046985923122!3d55.756766636385635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bcded486145%3A0x2b5c70bc8d062be1!2z0KDQvtGH0LTQtdC70YzRgdC60LDRjyDRg9C7LiwgMTUsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMjMwMjI!5e0!3m2!1sru!2sua!4v1570278537062!5m2!1sru!2sua" width="100%" height="585" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+				<div class="container">
+					<div class="contact-block">
+						<h3>контакты</h3>
+						<address>
+							123022, Москва,<br>
+							ул. Рочдельская, д. 15, корп. 25, офис 6
+						</address>
+
+						<div class="contact-block__links">
+							<a href="tel:+78002001682">+7 (800) 200-16-82</a>
+							<a href="mailto:info@tvoi-ring.ru">info@tvoi-ring.ru</a>
+						</div>
+						<a href="#" class="btn btn--yellow">
+							<span>
+								обратный звонок
+							</span>
+						</a>
+					</div>
+				</div>
+				<img src="img/bg/fist-contact.png" alt="" class="fist">
+			</div>
 			
 		</main>
 		<footer class="footer">
+			<div class="container flex flex--center flex--between">
+				<div class="footer__left flex flex--center">
+					<div class="logo">
+						<img src="img/logo_black.png" alt="">
+					</div>
+					<div class="copyright">
+						©2019 Positive Business. Все права защищены.
+					</div>
+				</div>
+
+				<div class="footer__right">
+					<ul class="social social--black flex">
+						<li>
+							<a href="#">
+								<span class="ico">
+									<svg>
+										<use xlink:href="#svg-inst"></use>
+									</svg>
+								</span>	
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="ico">
+									<svg>
+										<use xlink:href="#svg-vk"></use>
+									</svg>
+								</span>	
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="policy">Политика конфедициальности</a>
+				</div>
+			</div>
 			<!-- svg-sprite -->
-			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			</svg>
+			<div class="svg-sprite">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<symbol viewBox="0 0 16 21" id="svg-vk"><g><g><path d="M15.69003,14.30418c0,0.95994 -0.16906,1.81057 -0.53251,2.53765c-0.36299,0.72622 -0.8521,1.344 -1.46597,1.81964c-0.72688,0.57069 -1.52519,1.00919 -2.39446,1.25068c-0.86973,0.24279 -1.97497,0.42683 -3.31573,0.42683h-7.8601v-19.4683h6.9515c1.41896,0 2.49211,0.0648 3.22351,0.17324c0.73095,0.108 1.41444,0.34475 2.05498,0.69122c0.69253,0.37196 1.20605,0.86965 1.54779,1.49261c0.34174,0.62253 0.50629,1.33968 0.50629,2.15402c0,0.94266 -0.24862,1.78206 -0.7201,2.51735c-0.47148,0.73529 -1.1744,1.27574 -1.97859,1.62135v0.10412c1.12649,0.25143 2.17522,0.7638 2.89397,1.53711c0.71739,0.77503 1.08942,1.82742 1.08942,3.14247zM4.94862,8.59425h0.73547c0.83085,0 1.41263,-0.04493 1.74578,-0.06264c0.3327,-0.01728 0.67625,-0.14472 1.03156,-0.30889c0.38921,-0.18188 0.65772,-0.43245 0.80418,-0.753c0.14737,-0.31969 0.22105,-0.69252 0.22105,-1.11633c0,-0.31148 -0.08001,-0.6329 -0.24003,-0.96166c-0.16047,-0.32876 -0.40865,-0.56983 -0.74632,-0.71714c-0.32005,-0.13824 -0.6984,-0.21946 -1.13553,-0.23242c-0.43712,-0.01339 -1.08806,-0.03111 -1.95327,-0.03111h-0.46289zM10.70673,14.20396c0,-0.59704 -0.1216,-1.06535 -0.36344,-1.40275c-0.24229,-0.3374 -0.60619,-0.59488 -1.09032,-0.76769c-0.29428,-0.11319 -0.6984,-0.18015 -1.21328,-0.19354c-0.51533,-0.01339 -1.20514,-0.02808 -2.0699,-0.02808h-1.02116v4.98761h0.38514c1.263,0 2.1368,-0.07301 2.62139,-0.09072c0.48459,-0.01728 0.97777,-0.19873 1.47953,-0.4143c0.44119,-0.19052 0.76305,-0.46917 0.96692,-0.83724c0.20342,-0.36764 0.30513,-0.7867 0.30513,-1.25327z" fill="currentColor" fill-opacity="1"></path></g></g></symbol>
+
+					<symbol viewBox="0 0 20 20" id="svg-inst"><defs><clipPath id="ClipPath4127"><path d="M10.44916,1.74564c-2.55946,0 -2.86278,0.01037 -3.874,0.05703c-0.93437,0.04234 -1.44201,0.19873 -1.78014,0.33006c-0.44752,0.17367 -0.76666,0.38104 -1.10208,0.71714c-0.33541,0.33524 -0.54335,0.6545 -0.71694,1.10164c-0.13154,0.33827 -0.28795,0.84545 -0.33044,1.7799c-0.04611,1.01048 -0.0556,1.31376 -0.0556,3.87387c0,2.55925 0.00949,2.86253 0.0556,3.87344c0.04249,0.93445 0.1989,1.44206 0.33044,1.7799c0.17358,0.44713 0.38152,0.76683 0.71694,1.10207c0.33541,0.33524 0.65456,0.54261 1.10208,0.71671c0.33813,0.13133 0.84577,0.28772 1.78014,0.33049c1.01122,0.04579 1.31409,0.05573 3.874,0.05573c2.56036,0 2.86323,-0.00994 3.874,-0.05573c0.93482,-0.04277 1.44246,-0.19916 1.78014,-0.33049c0.44752,-0.1741 0.76711,-0.38147 1.10208,-0.71671c0.33587,-0.33568 0.54335,-0.65493 0.71739,-1.10207c0.13109,-0.33784 0.28705,-0.84545 0.32999,-1.7799c0.04611,-1.01091 0.05605,-1.31419 0.05605,-3.87344c0,-2.56012 -0.00994,-2.86339 -0.05605,-3.87387c-0.04294,-0.93445 -0.1989,-1.44163 -0.32999,-1.7799c-0.17404,-0.44713 -0.38152,-0.76639 -0.71739,-1.1025c-0.33496,-0.33524 -0.65456,-0.54261 -1.10208,-0.71628c-0.33768,-0.13133 -0.84532,-0.28772 -1.78014,-0.33006c-1.01077,-0.04666 -1.31409,-0.05703 -3.874,-0.05703c0,0 2.55991,0 0,0zM10.44916,0.01974c2.60376,0 2.93013,0.0108 3.95265,0.05746c1.02071,0.04666 1.71731,0.20866 2.32711,0.44541c0.6306,0.24495 1.16536,0.57242 1.69832,1.10596c0.53296,0.53267 0.86069,1.06751 1.10569,1.69782c0.23687,0.60957 0.3987,1.30598 0.44526,2.3264c0.04701,1.02215 0.05786,1.34918 0.05786,3.9525c0,2.60332 -0.01085,2.92906 -0.05786,3.95164c-0.04656,1.02042 -0.20839,1.71683 -0.44526,2.32726c-0.24501,0.63031 -0.57274,1.16428 -1.10569,1.69782c-0.53296,0.53267 -1.06772,0.86057 -1.69832,1.10553c-0.6098,0.23718 -1.3064,0.39875 -2.32711,0.44541c-1.02252,0.04666 -1.34889,0.05789 -3.95265,0.05789c-2.60331,0 -2.92968,-0.01123 -3.95265,-0.05789c-1.02026,-0.04666 -1.71731,-0.20823 -2.32711,-0.44541c-0.63015,-0.24495 -1.16491,-0.57285 -1.69787,-1.10553c-0.53296,-0.53354 -0.86069,-1.06751 -1.10569,-1.69782c-0.23732,-0.61044 -0.39915,-1.30684 -0.44571,-2.32726c-0.04656,-1.02258 -0.05786,-1.34832 -0.05786,-3.95164c0,-2.60332 0.0113,-2.93035 0.05786,-3.9525c0.04656,-1.02042 0.20839,-1.71683 0.44571,-2.3264c0.24501,-0.63031 0.57274,-1.16514 1.10569,-1.69782c0.53296,-0.53354 1.06772,-0.861 1.69787,-1.10596c0.6098,-0.23674 1.30685,-0.39875 2.32711,-0.44541c1.02297,-0.04666 1.34934,-0.05746 3.95265,-0.05746zM15.37234,9.60528c0,2.71824 -2.20415,4.92194 -4.92319,4.92194c-2.71858,0 -4.92273,-2.20371 -4.92273,-4.92194c0,-2.7191 2.20415,-4.92237 4.92273,-4.92237c2.71903,0 4.92319,2.20327 4.92319,4.92237zM13.64509,9.60528c0,-1.76521 -1.43116,-3.19561 -3.19593,-3.19561c-1.76477,0 -3.19548,1.4304 -3.19548,3.19561c0,1.76392 1.43071,3.19518 3.19548,3.19518c1.76477,0 3.19593,-1.43126 3.19593,-3.19518zM16.71717,4.4885c0,0.63506 -0.51488,1.15002 -1.15045,1.15002c-0.63512,0 -1.15045,-0.51496 -1.15045,-1.15002c0,-0.63549 0.51533,-1.15045 1.15045,-1.15045c0.63557,0 1.15045,0.51496 1.15045,1.15045z" fill="currentColor"></path></clipPath></defs><g><g><path d="M10.44916,1.74564c-2.55946,0 -2.86278,0.01037 -3.874,0.05703c-0.93437,0.04234 -1.44201,0.19873 -1.78014,0.33006c-0.44752,0.17367 -0.76666,0.38104 -1.10208,0.71714c-0.33541,0.33524 -0.54335,0.6545 -0.71694,1.10164c-0.13154,0.33827 -0.28795,0.84545 -0.33044,1.7799c-0.04611,1.01048 -0.0556,1.31376 -0.0556,3.87387c0,2.55925 0.00949,2.86253 0.0556,3.87344c0.04249,0.93445 0.1989,1.44206 0.33044,1.7799c0.17358,0.44713 0.38152,0.76683 0.71694,1.10207c0.33541,0.33524 0.65456,0.54261 1.10208,0.71671c0.33813,0.13133 0.84577,0.28772 1.78014,0.33049c1.01122,0.04579 1.31409,0.05573 3.874,0.05573c2.56036,0 2.86323,-0.00994 3.874,-0.05573c0.93482,-0.04277 1.44246,-0.19916 1.78014,-0.33049c0.44752,-0.1741 0.76711,-0.38147 1.10208,-0.71671c0.33587,-0.33568 0.54335,-0.65493 0.71739,-1.10207c0.13109,-0.33784 0.28705,-0.84545 0.32999,-1.7799c0.04611,-1.01091 0.05605,-1.31419 0.05605,-3.87344c0,-2.56012 -0.00994,-2.86339 -0.05605,-3.87387c-0.04294,-0.93445 -0.1989,-1.44163 -0.32999,-1.7799c-0.17404,-0.44713 -0.38152,-0.76639 -0.71739,-1.1025c-0.33496,-0.33524 -0.65456,-0.54261 -1.10208,-0.71628c-0.33768,-0.13133 -0.84532,-0.28772 -1.78014,-0.33006c-1.01077,-0.04666 -1.31409,-0.05703 -3.874,-0.05703c0,0 2.55991,0 0,0zM10.44916,0.01974c2.60376,0 2.93013,0.0108 3.95265,0.05746c1.02071,0.04666 1.71731,0.20866 2.32711,0.44541c0.6306,0.24495 1.16536,0.57242 1.69832,1.10596c0.53296,0.53267 0.86069,1.06751 1.10569,1.69782c0.23687,0.60957 0.3987,1.30598 0.44526,2.3264c0.04701,1.02215 0.05786,1.34918 0.05786,3.9525c0,2.60332 -0.01085,2.92906 -0.05786,3.95164c-0.04656,1.02042 -0.20839,1.71683 -0.44526,2.32726c-0.24501,0.63031 -0.57274,1.16428 -1.10569,1.69782c-0.53296,0.53267 -1.06772,0.86057 -1.69832,1.10553c-0.6098,0.23718 -1.3064,0.39875 -2.32711,0.44541c-1.02252,0.04666 -1.34889,0.05789 -3.95265,0.05789c-2.60331,0 -2.92968,-0.01123 -3.95265,-0.05789c-1.02026,-0.04666 -1.71731,-0.20823 -2.32711,-0.44541c-0.63015,-0.24495 -1.16491,-0.57285 -1.69787,-1.10553c-0.53296,-0.53354 -0.86069,-1.06751 -1.10569,-1.69782c-0.23732,-0.61044 -0.39915,-1.30684 -0.44571,-2.32726c-0.04656,-1.02258 -0.05786,-1.34832 -0.05786,-3.95164c0,-2.60332 0.0113,-2.93035 0.05786,-3.9525c0.04656,-1.02042 0.20839,-1.71683 0.44571,-2.3264c0.24501,-0.63031 0.57274,-1.16514 1.10569,-1.69782c0.53296,-0.53354 1.06772,-0.861 1.69787,-1.10596c0.6098,-0.23674 1.30685,-0.39875 2.32711,-0.44541c1.02297,-0.04666 1.34934,-0.05746 3.95265,-0.05746zM15.37234,9.60528c0,2.71824 -2.20415,4.92194 -4.92319,4.92194c-2.71858,0 -4.92273,-2.20371 -4.92273,-4.92194c0,-2.7191 2.20415,-4.92237 4.92273,-4.92237c2.71903,0 4.92319,2.20327 4.92319,4.92237zM13.64509,9.60528c0,-1.76521 -1.43116,-3.19561 -3.19593,-3.19561c-1.76477,0 -3.19548,1.4304 -3.19548,3.19561c0,1.76392 1.43071,3.19518 3.19548,3.19518c1.76477,0 3.19593,-1.43126 3.19593,-3.19518zM16.71717,4.4885c0,0.63506 -0.51488,1.15002 -1.15045,1.15002c-0.63512,0 -1.15045,-0.51496 -1.15045,-1.15002c0,-0.63549 0.51533,-1.15045 1.15045,-1.15045c0.63557,0 1.15045,0.51496 1.15045,1.15045z" fill-opacity="0" fill="currentColor" stroke-dashoffset="0" stroke-dasharray="" stroke-linejoin="miter" stroke-linecap="butt" stroke-opacity="1" stroke="currentColor" stroke-miterlimit="50" stroke-width="2" clip-path="url(&quot;#ClipPath4127&quot;)"></path></g></g></symbol>
+				</svg>
+			</div>
 			<!-- end svg-sprite -->
 		</footer>
 	</div><!-- end wrapper -->
+
+	<div id="overlay"></div>
+	<div class="popup">
+		<a href="#" class="close-popup"></a>
+		<div class="popup__title">
+			Напишите свой телефон и мы вам<br> перезвоним
+		</div>
+		<form action="#">
+			<div class="input-wrapper-container">
+				<div class="input-wrapper">
+					<input type="text" placeholder="Ваше имя:">
+				</div>
+				<div class="input-wrapper">
+					<input type="text" placeholder="Ваш телефон:">
+				</div>
+			</div>
+			<div class="btn-container">
+				<button type="submit" class="btn btn--yellow">
+					<span>
+						Отправить
+					</span>
+				</button>
+			</div>
+		</form>
+	</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
