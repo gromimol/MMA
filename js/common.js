@@ -9,7 +9,7 @@ $(document).ready(function () {
 	$('.close').on('click',function (e) {
 		e.preventDefault();
 
-		$('body').куьщмуClass('noscroll');
+		$('body').removeClass('noscroll');
 		$('.nav').removeClass('active');
 	});
 
