@@ -709,6 +709,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: transparent url("../img/bg/slide_text.png") 0 50% no-repeat;
   z-index: 1; }
 
 .slide__item__title {
