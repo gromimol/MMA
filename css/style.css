@@ -239,17 +239,29 @@ a {
   font-size: 20px;
   color: #fff; }
 
-/* хром, сафари */
-.element::-webkit-scrollbar {
-  width: 0; }
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px; }
 
-/* ie 10+ */
-.element {
-  -ms-overflow-style: none; }
+::-webkit-scrollbar-button {
+  background-color: var(--yellow); }
 
-/* фф (свойство больше не работает, других способов тоже нет)*/
-.element {
-  overflow: -moz-scrollbars-none; }
+::-webkit-scrollbar-track {
+  background-color: var(--yellow); }
+
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff; }
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: var(--yellow);
+  border-radius: 3px; }
+
+::-webkit-scrollbar-corner {
+  background-color: #999; }
+
+::-webkit-resizer {
+  background-color: #666; }
 
 /* Slider */
 .slick-slider {
