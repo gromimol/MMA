@@ -1295,23 +1295,29 @@ button.btn {
     padding: 1.5em 20px; }
 
   .logo img {
-    height: 100px; }
+    height: 120px; }
 
   .main-slider__content,
   .main-slider__dots,
   .main-slider__bottom {
-    padding: 0 20px; } }
+    padding: 0 20px; }
+
+  .price__notice {
+    margin-bottom: 3em; }
+
+  .price__title {
+    line-height: 1.3; } }
 /*1500*/
 @media (max-width: 1366px) {
   .top-screen {
     height: auto;
-    padding-top: 10em; }
+    padding-top: 12em; }
     .top-screen .container {
       -webkit-transform: translateY(0);
               transform: translateY(0); }
 
   .logo img {
-    height: 60px; }
+    height: 90px; }
 
   .main-slider-section::before {
     display: none; }
@@ -1680,7 +1686,7 @@ button.btn {
     font-size: 50px; }
 
   .logo img {
-    height: 60px; }
+    height: 90px; }
 
   .top-screen {
     padding-top: 150px; }
