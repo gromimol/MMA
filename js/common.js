@@ -61,12 +61,6 @@ $(document).ready(function () {
         $('.main-slider').slick('slickGoTo', slide);
       });
 
-	$(".type-list").on("click","a", function (e) {
-        e.preventDefault();
-        //забираем идентификатор бока с атрибута href
-        
-
-    });
 
 
 })
