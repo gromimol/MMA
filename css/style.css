@@ -1063,6 +1063,12 @@ a {
   .contact .fist {
     width: 14em; }
 
+.map-jpg {
+  width: 100%;
+  height: 585px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
 .contact-block {
   width: 583px;
   height: 556px;
@@ -1364,8 +1370,12 @@ button.btn {
   .contact-block {
     margin: 0 auto; }
 
-  .map iframe {
-    height: 300px !important; }
+  .map-jpg {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
   .footer {
     padding-top: 30px; } }
