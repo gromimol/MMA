@@ -989,7 +989,7 @@ a {
 .price {
   background: #000 url("../img/bg/price-bg.jpg") center top no-repeat;
   background-size: cover;
-  padding: 5.5em 0;
+  padding: 2em 0 5.5em;
   color: #fff; }
   .price .container {
     width: 100%;
@@ -1015,7 +1015,7 @@ a {
   margin: 0 auto;
   line-height: 1.4;
   font-weight: 300;
-  margin-bottom: 6.875em; }
+  margin-bottom: 2.5em; }
 
 .price__item {
   width: 49%;
