@@ -30,12 +30,15 @@ $(document).ready(function () {
 	});
 
 	// Скролл по якорю
-	$(".menu").on("click","a", function (event) {
+	$(".menu").on("click","a", function (e) {
 
-        event.preventDefault();
-        	var id  = $(this).attr('href'),
-            top = $(id).offset().top;
+        e.preventDefault();
 
+       	var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+
+        $('body').removeClass('noscroll');
+        $('.nav').removeClass('active');
         $('body,html').animate({scrollTop: top}, 1500);
 
     });
